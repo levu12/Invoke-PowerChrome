@@ -810,17 +810,17 @@ if (-not ($Browser)){
     # ------------------------------------------------------------------
     switch ($Browser.ToLower()) {
         "cft"       { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome for Testing\User Data\Local State"     }
-        "chromeDefault"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Default\Local State"                        }
-        "chrome1"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Profile 1\Local State"                        }
-        "chrome2"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Profile 2\Local State"                        }
-        "chrome3"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Profile 3\Local State"                        }
-        "chrome4"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Profile 4\Local State"                        }
-        "chrome5"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Profile 5\Local State"                        }
-        "chrome6"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Profile 6\Local State"                        }
-        "chrome7"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Profile 7\Local State"                        }
-        "chrome8"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Profile 8\Local State"                        }
-        "chrome9"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Profile 9\Local State"                        }
-        "chrome10"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Profile 10\Local State"                        }
+        "chromeDefault"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Local State"                        }
+        "chrome1"   { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Local State"                        }
+        "chrome2"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Local State"                        }
+        "chrome3"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Local State"                        }
+        "chrome4"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Local State"                        }
+        "chrome5"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Local State"                        }
+        "chrome6"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Local State"                        }
+        "chrome7"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Local State"                        }
+        "chrome8"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Local State"                        }
+        "chrome9"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Local State"                        }
+        "chrome10"    { $LocalStatePath = "$env:LOCALAPPDATA\Google\Chrome\User Data\Local State"                        }
         "edge"      { $LocalStatePath = "$env:LOCALAPPDATA\Microsoft\Edge\User Data\Local State"                }
         "brave"     { $LocalStatePath = "$env:LOCALAPPDATA\BraveSoftware\Brave-Browser\User Data\Local State"   }
         "chromium"  { $LocalStatePath = "$env:LOCALAPPDATA\Chromium\User Data\Local State"                      }
