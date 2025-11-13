@@ -5,6 +5,8 @@ A PowerShell script for decrypting Chromium-based browser passwords, supporting 
 The script dynamically interacts with Windows cryptographic APIs to decrypt passwords without external dependencies and can be executed in memory.
 
 This code is based on the following PoC: https://github.com/runassu/chrome_v20_decryption
+
+Lol I just added support for multiple Chrome profiles. Bcrypt decryption seems broken though.
 ___
 
 **Microsoft Edge / Chromium v10 Blobs**
